@@ -66,8 +66,10 @@ a{
 }
 .content{
     border-radius: 5%;
-    height: 80%;
-    width: 80%;
+    height: 40%;
+    width: 40%;
+    float: left;
+    margin-right: 30px;
 }
 
 .skill-row{
