@@ -2,7 +2,6 @@ body {
     margin: 0;
     text-align: center;
     font-family: 'Merriweather', serif;
-    font-size: 200%;
 }
 
 div {
@@ -14,7 +13,6 @@ h1 {
     margin: 50px auto 0 auto;
     font-family: 'Sacramento', cursive;
     font-size: 5.625rem; /*100%= 1em = 16px*/
-    line-height: 2px;
     color: #CC0000;
 }
 
@@ -28,6 +26,7 @@ h2 {
 h3 {
     font-family: 'Montserrat', sans-serif;
     color: #11999E;
+    text-align: left;
 }
 
 a{
@@ -61,11 +60,19 @@ a{
 
 .profile{
     border-radius: 50%;
-    /* height: 50%;
-    width: 50%; */
+    height: 40%;
+    width: 40%;
+    margin: auto;
 }
 .content{
     border-radius: 5%;
-    /* height: 30%;
-    width: 60%; */
+    height: 80%;
+    width: 80%;
+}
+
+.skill-row{
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
 }
