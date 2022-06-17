@@ -2,6 +2,11 @@ body {
     margin: 0;
     text-align: center;
     font-family: 'Merriweather', serif;
+    color: #6b6060;
+    /* -webkit-text-stroke: 0.1px rgb(138, 138, 138); width and color */
+    text-shadow: 0 0 1px #000; 
+    -moz-text-shadow: 0 0 1px #000;
+    -webkit-text-shadow: 0 0 1px #000;
 }
 
 div {
@@ -12,7 +17,8 @@ div {
 h1 {
     margin: 50px auto 0 auto;
     font-family: 'Sacramento', cursive;
-    font-size: 5.625rem; /*100%= 1em = 16px*/
+    font-size: 5.625rem;
+    /*100%= 1em = 16px*/
     color: #CC0000;
 }
 
@@ -26,12 +32,18 @@ h2 {
 h3 {
     font-family: 'Montserrat', sans-serif;
     color: #11999E;
-    text-align: left;
 }
 
-a{
-    color:#11999E;
+a {
+    font-family: 'Montserrat', sans-serif;
+    color: #034f52;
+    margin: auto 10px;
+    text-decoration: none;
 }
+a:hover{
+    color: #00191a;
+}
+
 .top-container {
     background-color: #e4f9f5;
     position: relative;
@@ -39,32 +51,44 @@ a{
 }
 
 .middle-container {
-
+    /* background-image: url("../images/anime-original-night-crescent-star-trails.jpg"); */
+    /* background-image: url("../images/tree-dark-evening-silhouette.jpg"); */
+    background-size: 100%;
+    background-attachment:fixed;
+    padding: 100px 0;
 }
 
 .bottom-container {
+    padding: 30px;
+    background-color: #66BFBF;
+}
 
+.copyright {
+    color: #00191a;
+    font-size: 75%;
+    padding: 20px 0;
 }
 
 .bottom-cloud {
     position: absolute;
     bottom: 300px;
-    left: 500px;
+    left: 300px;
 }
 
 .top-cloud {
     position: absolute;
-    right: 500px;
-    top: 50px;
+    right: 300px;
+    top: 40px;
 }
 
-.profile{
+.profile {
     border-radius: 50%;
     height: 40%;
     width: 40%;
     margin: auto;
 }
-.content{
+
+.content {
     border-radius: 5%;
     height: 40%;
     width: 40%;
@@ -72,9 +96,61 @@ a{
     margin-right: 30px;
 }
 
-.skill-row{
+.skill-row {
     width: 50%;
     margin: 100px auto;
     text-align: left;
     line-height: 2;
+}
+
+hr {
+    border-style: dotted none none;
+    border-color: #c6cccc;
+    border-width: 0.6rem;
+    width: 5rem;
+    margin: 100px auto;
+}
+
+p {
+    line-height: 2;
+}
+
+.intro{
+    /* width: 50%; */
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
+
+.contact-me {
+    margin-bottom: 50px;
+}
+
+.contact-message{
+    width: 40%;
+    margin: 40px auto;
 }
